@@ -14,6 +14,8 @@ author: Arjun Ramachandrula
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Teaching:
+    - FPS Summer 2021 Program: "fps"
   Projects:
     - Personal: "projects-personal"
     - Open Source: "projects-open-source"
