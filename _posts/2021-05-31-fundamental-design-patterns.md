@@ -397,3 +397,5 @@ public class Board {
 ### Command pattern
 
 Sometimes, when you are writing some kind of a controller, you need to plan for a bunch of possible cases. Say, for example, you're taking in input and doing something, based on the string value you take in.
+
+This is where the __Command Pattern__ comes in: here, what we want to do is be able to *detach* the commands from the data that they act upon. But why? Well, there are two advantages with this approach: we can encapsulate the logic behind the move, allowing for reusability and extension. Also, we can maintain readability with our code, so that the method that uses these commands doesn't get too convoluted, and fullfills a single purpose.
