@@ -399,3 +399,29 @@ public class Board {
 Sometimes, when you are writing some kind of a controller, you need to plan for a bunch of possible cases. Say, for example, you're taking in input and doing something, based on the string value you take in.
 
 This is where the __Command Pattern__ comes in: here, what we want to do is be able to *detach* the commands from the data that they act upon. But why? Well, there are two advantages with this approach: we can encapsulate the logic behind the move, allowing for reusability and extension. Also, we can maintain readability with our code, so that the method that uses these commands doesn't get too convoluted, and fullfills a single purpose.
+
+Take, for example, a simple controller that uses a switch statement to execute some functions. Naively, we could just throw everything in one big switch statement, right?
+
+``` java
+public class ExectuteFunction {
+    public void myFunction(String s) {
+        switch (s) {
+            case "q":
+            case "quit":
+                return;
+
+            case "neg":
+                System.out.println(-1);
+                break;
+            case "pos":
+                System.out.println(0);
+                break;
+            default:
+                System.out.println("%s is not a valid command.", s);
+                break;  
+        }
+    }
+}
+```
+
+So this isn't *__terrible__* to maintain, but it isn't easy, either. If we wanted to add something, we'd have to go back in here and add. Not very extensible. But, more glaringly, this violates our SOLID principles. We shouldn't have to modify this method to get an extension of functionality. So, how do we do this, so that we can keep our method tight, and have minimal functionality stuffed in here upon extension? This is where the __Command Pattern__ comes in. Here, we make each of our commands encapsulate all of it's work, so that we can use it in multiple places.

@@ -19,6 +19,7 @@ navbar-links:
   Projects:
     - Personal: "projects-personal"
     - Open Source: "projects-open-source"
+    - Solutions: "projects-solutions"
   Blog: "blog"
   About Me: "aboutme"
 # --- Logo --- #
