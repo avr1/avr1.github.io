@@ -16,10 +16,7 @@ author: Arjun Ramachandrula
 navbar-links:
   Teaching:
     - FPS Summer 2021 Program: "fps"
-  Projects:
-    - Personal: "projects-personal"
-    - Open Source: "projects-open-source"
-    - Solutions: "projects-solutions"
+  Projects: "projects"
   Blog: "blog"
   About Me: "aboutme"
 # --- Logo --- #
