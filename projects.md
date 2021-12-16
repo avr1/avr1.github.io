@@ -26,8 +26,6 @@ We iterated through designs, working with interfaces to load, export, and transf
 
 Code is available upon request, per the course rules.
 
-A screenshot will be added here shortly.
-
 ### Image Compression
 
 Here's an example of a project my team members and I made for school. It's a cool way to compress pictures to different resolutions while being able to remove only the boring pixels using a seam carving algorithm.
@@ -36,6 +34,17 @@ Here's an example of a project my team members and I made for school. It's a coo
   <source src="../assets/img/balloons.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+
+## Group Projects
+
+## As Part of a Course, I worked on the [Log-Structured Virtual disk for Ceph](https://github.com/avr1/lsd_ceph) Project
+
+We started with a research block device, called [BS3](https://github.com/asch/bs3), which delivered next-generation performance by amortizing write-time organization with read-time awareness.
+
+The device came with a Linux Kernel API, which wasn't useful for platforms that needed virtualization (such as QEMU). So, we rearchitected some of the function calls on the block device to support a C-Compatible API, and wrote our own version of Ceph's RBD API to use as an endpoint with QEMU.
+
+Full demos and project descriptions are available on the GitHub link posted above.
+
 
 ## Open Source Projects
 
